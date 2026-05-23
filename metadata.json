@@ -1,0 +1,6 @@
+{
+  "name": "Gerford AI",
+  "description": "Premium redesigned landing page for Gerford AI following a single-page scroll layout inspired by elite sport and enterprise AI solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

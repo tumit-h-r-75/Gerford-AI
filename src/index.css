@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,300..600;1,300..600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-brand-bg: #0A0B0F;
+  --color-brand-surface: #111318;
+  --color-brand-border: #1E2028;
+  --color-brand-gold: #C8A96E;
+  --color-brand-blue: #4A6CF7;
+  --color-brand-text: #F0EFE9;
+  --color-brand-muted: #8A8F9E;
+  
+  --animate-infinite-marquee: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0B0F;
+  color: #F0EFE9;
+  font-family: var(--font-sans);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0B0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2028;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A96E;
+}
+
+/* Scroll snap container */
+.scroll-container {
+  overflow-y: auto;
+}
+
+/* Custom Text Stroke for Bold Outline Typography */
+.text-outline {
+  -webkit-text-stroke: 1px #F0EFE9;
+  text-shadow: none;
+}
+
+.text-outline-gold {
+  -webkit-text-stroke: 1px #C8A96E;
+  text-shadow: none;
+}
+
